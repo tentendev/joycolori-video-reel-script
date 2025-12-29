@@ -309,6 +309,16 @@
             }
         }
 
+        /* Prevent horizontal overflow globally */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         /* Responsive - Mobile */
         @media (max-width: 600px) {
             header {
@@ -326,6 +336,7 @@
             .main-content {
                 padding: 0 12px 60px;
                 gap: 16px;
+                overflow-x: hidden;
             }
 
             .card {
@@ -384,8 +395,21 @@
 
             /* Visual block images - full width on mobile */
             .visual-block .visual-img {
-                max-width: 100%;
+                max-width: 100% !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            /* All images must be constrained */
+            img {
+                max-width: 100% !important;
                 height: auto;
+            }
+
+            /* Visual blocks container */
+            .visual-block {
+                max-width: 100%;
+                overflow: hidden;
             }
 
             /* Copy blocks */
