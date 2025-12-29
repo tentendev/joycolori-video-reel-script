@@ -368,17 +368,24 @@
                 flex-shrink: 0;
             }
 
-            /* Storyboard thumbnails mobile */
-            .storyboard-thumb {
+            /* Script table storyboard thumbnails - sprite grids */
+            .script-table .storyboard-thumb {
                 width: 100%;
-                max-width: 100%;
-                height: 280px;
+                max-width: 160px;
+                height: 160px;
                 margin-top: 12px;
+                background-size: 300% 300%;
             }
 
             /* Visual blocks */
             .visual-block {
                 padding: 12px;
+            }
+
+            /* Visual block images - full width on mobile */
+            .visual-block .visual-img {
+                max-width: 100%;
+                height: auto;
             }
 
             /* Copy blocks */
@@ -391,11 +398,13 @@
                 font-size: 0.65rem;
             }
 
-            /* Cover design images on mobile */
+            /* Cover design images on mobile - override inline styles */
             .cover-design-section .storyboard-thumb {
+                width: 100% !important;
                 max-width: 100% !important;
                 height: auto !important;
                 aspect-ratio: 4/5;
+                background-size: cover !important;
             }
 
             /* Footer */

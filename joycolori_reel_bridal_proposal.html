@@ -480,12 +480,27 @@
                 flex-shrink: 0;
             }
 
-            /* Storyboard thumbnails mobile */
-            .storyboard-thumb {
+            /* Script table storyboard thumbnails */
+            .script-table .storyboard-thumb {
                 width: 100%;
                 max-width: 100%;
-                height: 280px;
+                height: auto;
+                min-height: 200px;
+                aspect-ratio: 9/16;
                 margin-top: 12px;
+                background-size: cover;
+            }
+
+            /* Campaign poster on mobile */
+            .visual-block .storyboard-thumb[style*="aspect-ratio: 2/3"] {
+                max-width: 280px !important;
+            }
+
+            /* Cover strategy grid images */
+            .visual-block .storyboard-thumb[style*="aspect-ratio: 4/5"] {
+                width: 100% !important;
+                height: auto !important;
+                min-height: 180px;
             }
 
             /* Copy blocks */
@@ -498,11 +513,13 @@
                 font-size: 0.65rem;
             }
 
-            /* Cover design images on mobile */
+            /* Cover design images on mobile - override inline styles */
             .cover-design-section .storyboard-thumb {
+                width: 100% !important;
                 max-width: 100% !important;
                 height: auto !important;
                 aspect-ratio: 4/5;
+                background-size: cover !important;
             }
 
             /* Tab containers */
@@ -539,6 +556,10 @@
 
             .modal-header {
                 padding: 12px 16px;
+            }
+
+            .modal-header h3 {
+                font-size: 0.85rem;
             }
 
             .modal-body {
