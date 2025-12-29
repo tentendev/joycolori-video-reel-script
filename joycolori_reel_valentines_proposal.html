@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOY COLORi 情人節 Reels 創意提案</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- M3 Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <style>
+        :root {
+            --md-sys-color-primary: #D14561;
+            /* Valentine's Romantic Red/Pink */
+            --md-sys-color-on-primary: #FFFFFF;
+            --md-sys-color-primary-container: #FFD8E4;
+            --md-sys-color-on-primary-container: #3E0013;
+
+            --md-sys-color-secondary: #77565A;
+            --md-sys-color-secondary-container: #FFD9DE;
+
+            --md-sys-color-surface: #FFF8F8;
+            /* Very subtle pink tint */
+            --md-sys-color-surface-container: #FFFFFF;
+            --md-sys-color-on-surface: #201A1B;
+            --md-sys-color-on-surface-variant: #524345;
+
+            --md-sys-color-outline: #857375;
+            --md-sys-color-outline-variant: #D7C1C4;
+
+            --border-radius-xl: 28px;
+            --border-radius-lg: 16px;
+            --border-radius-md: 12px;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background-color: var(--md-sys-color-surface);
+            padding: 80px 20px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brand-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #F8E6E9;
+            color: #3E0013;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #201A1B 0%, #524345 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-top: 16px;
+            max-width: 600px;
+            font-weight: 400;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+            display: grid;
+            gap: 24px;
+        }
+
+        .card {
+            background-color: var(--md-sys-color-surface-container);
+            border-radius: var(--border-radius-xl);
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 24px;
+            color: var(--md-sys-color-on-surface);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background-color: var(--md-sys-color-primary);
+            border-radius: 4px;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .info-cell {
+            padding: 20px;
+            background-color: var(--md-sys-color-surface);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--md-sys-color-on-surface-variant);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .value {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .script-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
+        }
+
+        .script-table th {
+            text-align: left;
+            padding: 16px;
+            font-size: 0.85rem;
+            color: var(--md-sys-color-on-surface-variant);
+            border-bottom: 1px solid var(--md-sys-color-outline-variant);
+            font-weight: 600;
+        }
+
+        .script-table td {
+            padding: 20px 16px;
+            border-bottom: 1px solid #F0F0F0;
+            vertical-align: middle;
+            font-size: 0.95rem;
+        }
+
+        .script-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .time-badge {
+            display: inline-block;
+            background-color: var(--md-sys-color-on-surface);
+            color: var(--md-sys-color-surface);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-family: 'Inter', monospace;
+        }
+
+        .storyboard-thumb {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background-color: #eee;
+        }
+
+        .storyboard-thumb:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .copy-block {
+            background-color: #202124;
+            color: #E8EAED;
+            padding: 24px;
+            border-radius: var(--border-radius-lg);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 0.95rem;
+            white-space: pre-wrap;
+            position: relative;
+        }
+
+        .copy-label {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 0.7rem;
+            color: #9AA0A6;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Tab Styles */
+        .tab-container,
+        .audio-tab-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline-variant);
+        }
+
+        .audio-tab-container {
+            margin-top: 20px;
+        }
+
+        .tab-btn,
+        .audio-tab-btn {
+            background: transparent;
+            border: none;
+            padding: 10px 16px;
+            font-size: 0.9rem;
+            color: var(--md-sys-color-on-surface-variant);
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tab-btn:hover,
+        .audio-tab-btn:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            color: var(--md-sys-color-primary);
+        }
+
+        .tab-btn.active,
+        .audio-tab-btn.active {
+            background-color: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-surface);
+            font-weight: 600;
+        }
+
+        .tab-content,
+        .audio-tab-content {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: #1E1E1E;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            max-height: 85vh;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 0;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .json-code {
+            padding: 24px;
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
+            color: #A6E22E;
+            white-space: pre-wrap;
+            background: #151515;
+        }
+
+        .modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .copy-btn {
+            background-color: var(--md-sys-color-primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .card {
+                padding: 24px;
+                border-radius: 20px;
+            }
+
+            .script-table th {
+                display: none;
+            }
+
+            .script-table td {
+                display: block;
+                padding: 8px 0;
+                border: none;
+            }
+
+            .script-table tr {
+                display: block;
+                margin-bottom: 24px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid var(--md-sys-color-outline-variant);
+            }
+
+            .storyboard-thumb {
+                width: 100%;
+                max-width: 180px;
+                height: 320px;
+                margin-top: 10px;
+            }
+        }
+
+        /* Navigation Tabs */
+        .proposal-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+            background: rgba(0, 0, 0, 0.04);
+            padding: 6px;
+            border-radius: 16px;
+            width: fit-content;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .nav-link.active {
+            background-color: var(--md-sys-color-surface-container);
+            color: var(--md-sys-color-on-surface);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="proposal-nav">
+            <a href="joycolori_reel_proposal.html" class="nav-link">Brand Campaign</a>
+            <a href="joycolori_reel_valentines_proposal.html" class="nav-link active">Valentine's Day</a>
+            <a href="joycolori_reel_bridal_proposal.html" class="nav-link">Bridal Collection</a>
+        </nav>
+        <div class="brand-chip">
+            <span class="material-symbols-outlined" style="font-size: 16px;">favorite</span>
+            JOY COLORi 情人節專案
+        </div>
+        <h1>愛的日常練習曲</h1>
+        <p>為情侶打造的「日常項鍊」Reels 內容策略。</p>
+    </header>
+
+    <div class="main-content">
+
+        <!-- 1. Strategy Overview -->
+        <div class="card">
+            <h2>策略總覽 (Strategy Overview)</h2>
+            <div class="strategy-grid">
+                <div class="info-cell">
+                    <span class="label">專案名稱</span>
+                    <div class="value">情人節：日常的閃耀</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">主打產品</span>
+                    <div class="value">日常項鍊 (Daily Necklace)</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">目標受眾</span>
+                    <div class="value">情侶 / 尋找禮物的伴侶</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">核心情緒</span>
+                    <div class="value">浪漫、驚喜、永續的愛</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">主要行動 (CTA)</span>
+                    <div class="value">預約鑑賞 & 標記另一半</div>
+                </div>
+            </div>
+
+            <!-- 2. Campaign Poster / Key Visual -->
+            <div class="card">
+                <h2>視覺形象海報 (Campaign Poster)</h2>
+                <div class="visual-block" style="text-align: center; background: transparent; padding: 0;">
+
+                    <!-- Movie Poster Container -->
+                    <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                        data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-reality&quot;, &quot;aspect_ratio&quot;: &quot;2:3&quot;, &quot;prompt&quot;: &quot;Cinematic movie poster for a romantic film titled 'Daily Shine'. A vertical shot of a young couple at sunset, with the man presenting a gift. The lighting is warm and golden. Elegant serif typography title at the bottom. Movie credits block at the very bottom. Award laurels in the corners. High fashion, emotional, 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render&quot;, &quot;consistency_seed&quot;: 101}"
+                        style="position: relative; width: 100%; max-width: 400px; aspect-ratio: 2/3; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4); display: block; height: auto; cursor: pointer;">
+
+                        <!-- Background Image (Cropped) -->
+                        <div style="position: absolute; inset: 0; background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center; transition: transform 0.5s ease;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'"></div>
+
+                        <!-- Gradient Overlay -->
+                        <div
+                            style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 70%, rgba(20, 10, 10, 0.95) 100%); pointer-events: none;">
+                        </div>
+
+                        <!-- Poster Text Content -->
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; color: white; padding: 40px 20px 30px; box-sizing: border-box; pointer-events: none;">
+                            <div
+                                style="font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 12px; font-weight: 300; opacity: 0.9;">
+                                Valentine's Day 2024</div>
+
+                            <h3
+                                style="font-family: 'Times New Roman', serif; font-size: 2.8rem; margin: 0; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                Daily Shine</h3>
+
+                            <div
+                                style="font-size: 1.1rem; margin-top: 8px; font-weight: 300; letter-spacing: 0.1em; font-family: 'Noto Sans TC', serif;">
+                                愛的日常練習曲</div>
+
+                            <!-- Credits Block -->
+                            <div
+                                style="font-size: 0.45rem; margin-top: 24px; color: rgba(255,255,255,0.5); letter-spacing: 0.15em; line-height: 1.6; text-transform: uppercase;">
+                                JOY COLORi presents a film by TENTEN AI <br>
+                                Starring "The Daily Diamond" & "True Love" • Music by Suno AI <br>
+                                Sustainable • Ethical • Eternal
+                            </div>
+                        </div>
+
+                        <!-- View Prompt Badge -->
+                        <span
+                            style="position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 12px; font-size: 0.75rem; border-radius: 20px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); font-weight: 500;">View
+                            Prompt</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Cover & Aesthetic Strategy -->
+            <div class="card">
+                <h2>封面與美學策略 (Cover Strategy)</h2>
+                <p style="color: var(--md-sys-color-on-surface-variant); margin-bottom: 24px;">
+                    利用「情感金句」+「高質感生活感」的雙重策略，從探索頁面吸引點擊。
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                    <!-- Concept 1 -->
+                    <div class="visual-block" style="background: transparent; padding: 0;">
+                        <div class="storyboard-thumb"
+                            style="width: 100%; aspect-ratio: 4/5; height: auto; border-radius: 12px; background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center;"
+                            onclick="showPromptModal(this)"
+                            data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-moody&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Romantic close-up portrait of a couple. The man is gently putting a necklace on the woman from behind. She has her eyes closed, smiling softly, with her hands touching the necklace. Soft, warm candlelight or fireplace glow. Intimate and emotional atmosphere. Focus on the connection and the sparkle of the necklace. 8k resolution.&quot;}">
+                        </div>
+                        <div class="caption" style="text-align: center; margin-top: 8px;"><strong>A.
+                                情感共鳴</strong><br>強調情侶間的驚喜與感動瞬間</div>
+                    </div>
+                    <!-- Concept 2 -->
+                    <div class="visual-block" style="background: transparent; padding: 0;">
+                        <div class="storyboard-thumb"
+                            style="width: 100%; aspect-ratio: 4/5; height: auto; border-radius: 12px; background-image: url('images/joycolori_val_hook.png'); background-size: cover; background-position: center;"
+                            onclick="showPromptModal(this)"
+                            data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;lifestyle-vlog&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Fun, split-screen composition. Top half: A wilted bouquet of red roses. Bottom half: A sparkling JOY COLORi diamond necklace box being opened, capturing a bright gleam. Text overlay in the middle: 'Flowers vs. Forever'. Bright, high-contrast colors. Pop art influence. 8k resolution.&quot;}">
+                        </div>
+                        <div class="caption" style="text-align: center; margin-top: 8px;"><strong>B.
+                                趣味反差</strong><br>對比傳統禮物與鑽石的差異</div>
+                    </div>
+                    <!-- Concept 3 -->
+                    <div class="visual-block" style="background: transparent; padding: 0;">
+                        <div class="storyboard-thumb"
+                            style="width: 100%; aspect-ratio: 4/5; height: auto; border-radius: 12px; background-image: url('images/joycolori_cover_v3_eco.png'); background-size: cover; background-position: center;"
+                            onclick="showPromptModal(this)"
+                            data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;studio-product&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Conceptual art photography. A beautiful diamond necklace hanging from a natural branch or nestled in fresh green moss and wildflowers. Soft, ethereal morning light filtering through leaves (dappled light). The juxtaposition of luxury jewelry and raw nature. Clean, organic, peaceful aesthetic. 8k resolution.&quot;}">
+                        </div>
+                        <div class="caption" style="text-align: center; margin-top: 8px;"><strong>C.
+                                永續美學</strong><br>展現自然與科技的完美結合</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Script with Visuals -->
+            <div class="card">
+                <h2>逐秒分鏡腳本</h2>
+                <table class="script-table">
+                    <thead>
+                        <tr>
+                            <th width="8%">時間</th>
+                            <th width="30%">畫面視覺</th>
+                            <th width="12%">聲音音效</th>
+                            <th width="30%">文案 / 旁白</th>
+                            <th width="20%">分鏡示意 (Click to View Prompt)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="time-badge">0:00</span></td>
+                            <td><strong>[Hook]</strong> 男友視角的手機螢幕錄影畫面，正在搜尋「送女友禮物 不踩雷」。畫面快速滑動，顯示各種常見禮物（花、香水），然後停在 JOY
+                                COLORi
+                                的網頁。</td>
+                            <td>🔍 鍵盤打字聲<br>📱 滑動音效</td>
+                            <td><strong>還在煩惱情人節送什麼？<br>別再送那些會凋謝的禮物了。</strong></td>
+                            <td>
+                                <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                    data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;lifestyle-vlog&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Point-of-view (POV) shot looking at a smartphone screen held by a man's hand. The screen shows a social media feed or search engine with the query 'Best Valentine's Day Gifts 2024'. The thumb is scrolling past generic images of flowers and chocolates. The screen then pauses on a sleek, elegant website image of a JOY COLORi diamond necklace. Background is a blurred, cozy living room. Warm, authentic vibe. 8k resolution, high detail.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, blur, low quality&quot;, &quot;consistency_seed&quot;: 101}"
+                                    style="background-image: url('images/joycolori_val_hook.png'); background-size: cover; background-position: center;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="time-badge">0:03</span></td>
+                            <td><strong>[Transition]</strong> 畫面切換到 JOY COLORi 門市。男友專注挑選項鍊，櫃姐展示出一條簡約閃耀的鎖骨鍊。特寫他眼神中的滿意。
+                            </td>
+                            <td>✨ 輕柔轉場音</td>
+                            <td><strong>一份能每天戴著的承諾，<br>就像我們的愛，純淨又永續。</strong></td>
+                            <td>
+                                <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                    data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-reality&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Medium shot inside a bright, modern luxury jewelry store. A young Asian man is looking intently at a delicate diamond necklace presented on a velvet tray by a sales associate (hands only). He smiles warmly, looking relieved and happy with his choice. Soft, flattering store lighting accentuates the sparkle of the necklace. Background features blurred jewelry display cases. 8k resolution, cinematic composition.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, dark, gloomy&quot;, &quot;consistency_seed&quot;: 101}"
+                                    style="background-image: url('images/joycolori_val_store.png'); background-size: cover; background-position: center;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="time-badge">0:06</span></td>
+                            <td><strong>[The Moment]</strong> 約會場景（例如海邊或景觀餐廳）。男友從身後拿出禮物盒，女友驚喜摀嘴的瞬間。自然光或燭光營造浪漫氛圍。</td>
+                            <td>❤️ 心跳聲效<br>🎉 驚喜音效</td>
+                            <td><strong>給最特別的妳，<br>JOY COLORi 未來鑽石。</strong></td>
+                            <td>
+                                <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                    data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-reality&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Candid, emotional shot of a couple on a date at sunset by the beach or in a dimly lit romantic restaurant. The man is presenting a signature JOY COLORi teal gift box. The woman (young Asian female, 20s) has her hands over her mouth in genuine surprise and delight. Warm, golden backlighting or ambient candlelight. Shallow depth of field. The focus is on her emotional reaction and the gift box. 8k, romantic atmosphere.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, stiff, posed, fake emotions&quot;, &quot;consistency_seed&quot;: 101}"
+                                    style="background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="time-badge">0:10</span></td>
+                            <td><strong>[Close-up]</strong> 鏡子前，女友自己配戴項鍊，或男友幫忙戴上的特寫。鑽石在頸間閃耀，搭配日常穿搭（如白色針織衫）。</td>
+                            <td>✨ 鑽石閃耀音效</td>
+                            <td><strong>日常，也能很閃耀。<br>100% 實驗室培育，無碳更安心。</strong></td>
+                            <td>
+                                <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                    data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;studio-product&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Close-up beauty shot of the woman's neck and collarbone area. She is wearing a soft white knitted sweater. A delicate JOY COLORi solitaire diamond necklace rests perfectly on her skin, catching the light with brilliant fire. Her hand is gently touching the pendant. Soft, diffused natural window light. Skin texture is realistic and glowing. Minimalist, clean aesthetic. 8k, advertising quality.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, blur, noise, jewelry distortion&quot;, &quot;consistency_seed&quot;: 101}"
+                                    style="background-image: url('images/joycolori_cover_v1_emotional.png'); background-size: cover; background-position: center;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="time-badge">0:13</span></td>
+                            <td><strong>[Ending]</strong> 兩人甜蜜依偎的合照/影片，對鏡頭燦爛笑。Logo 與行動呼籲出現。</td>
+                            <td>🎵 音樂高潮收尾</td>
+                            <td><strong>@他，告訴他這就是妳要的！<br>👇 Tag 下一位幸福的妳</strong></td>
+                            <td>
+                                <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                    data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;lifestyle-vlog&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Selfie-style video frame of the happy couple. They are leaning their heads together, smiling brightly at the camera. The woman is pointing to the necklace on her neck. Background is a blurry cityscape at twilight or a scenic date spot. Joyful, energetic, and authentic relationship vibes. Overlay text: 'Happy Valentine's Day'. 8k, social media style.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, sad, serious&quot;, &quot;consistency_seed&quot;: 101}"
+                                    style="background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center;">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 6. Social Copy with Tabs -->
+            <div class="card">
+                <h2>社群貼文文案 (Social Variations)</h2>
+
+                <!-- Tab Navigation -->
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="openTab(event, 'copy1')">方案 A：浪漫深情</button>
+                    <button class="tab-btn" onclick="openTab(event, 'copy2')">方案 B：幽默直白</button>
+                    <button class="tab-btn" onclick="openTab(event, 'copy3')">方案 C：永續價值</button>
+                </div>
+
+                <!-- Variation 1: Romantic -->
+                <div id="copy1" class="tab-content copy-block" style="display: block;">
+                    <div class="copy-label">Variation A: Romantic & Sentimental</div>
+                    <div class="post-content">
+                        最好的禮物，是把每天都過成詩。🌹
+
+                        謝謝你，總是用心記住我的喜好。
+                        這條項鍊不只是飾品，更是你承諾的重量。
+
+                        JOY COLORi 未來鑽石，純淨無瑕，就像我們之間的愛。
+                        今年情人節，我想帶著這份光芒，陪你走更遠的路。
+
+                        👇 標記那個寵你的他，暗示一下！😉
+
+                        .
+                        .
+                        #JOYCOLORi #未來鑽石 #情人節禮物 #情侶日常 #鎖骨鍊 #鑽石項鍊 #LoveForever #ValentinesDay
+                    </div>
+                    <div class="cover-design-section"
+                        style="margin-top: 24px; border-top: 1px solid var(--md-sys-color-outline-variant); padding-top: 16px;">
+                        <h4 style="color: var(--md-sys-color-secondary); margin: 0 0 12px 0; font-size: 0.9rem;">Cover
+                            Design Concept & Prompt 🎨</h4>
+                        <div class="storyboard-thumb"
+                            style="width: 100%; max-width: 375px; aspect-ratio: 4/5; height: auto; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center;"
+                            onclick="showPromptModal(this)"
+                            data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-moody&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Romantic close-up portrait of a couple. The man is gently putting a necklace on the woman from behind. She has her eyes closed, smiling softly, with her hands touching the necklace. Soft, warm candlelight or fireplace glow. Intimate and emotional atmosphere. Focus on the connection and the sparkle of the necklace. 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, blur&quot;, &quot;consistency_seed&quot;: 101}">
+                            <span
+                                style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; backdrop-filter: blur(4px);">View
+                                Prompt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Variation 2: Humorous -->
+                <div id="copy2" class="tab-content copy-block" style="display: none;">
+                    <div class="copy-label">Variation B: Playful & Direct</div>
+                    <div class="post-content">
+                        直男生存指南：這次別送花了！🙅‍♀️💐
+
+                        花會謝，巧克力會胖（誤），
+                        只有鑽石才是永恆的快樂泉源！💎
+
+                        JOY COLORi 日常項鍊，好搭又閃耀，
+                        重點是——它是 100% 實驗室培育，對荷包和地球都友善！
+
+                        各位男友們，筆記做好了嗎？
+                        這招學起來，保證女友笑容藏不住！😎
+
+                        👇 留言 @男友：這就是標準答案！
+
+                        .
+                        .
+                        #JOYCOLORi #求生欲 #男友視角 #情人節送禮 #女友禮物 #直男救星 #LabGrownDiamond
+                    </div>
+                    <div class="cover-design-section"
+                        style="margin-top: 24px; border-top: 1px solid var(--md-sys-color-outline-variant); padding-top: 16px;">
+                        <h4 style="color: var(--md-sys-color-secondary); margin: 0 0 12px 0; font-size: 0.9rem;">Cover
+                            Design Concept & Prompt 🎨</h4>
+                        <div class="storyboard-thumb"
+                            style="width: 100%; max-width: 375px; aspect-ratio: 4/5; height: auto; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); background-image: url('images/joycolori_val_hook.png'); background-size: cover; background-position: center;"
+                            onclick="showPromptModal(this)"
+                            data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;lifestyle-vlog&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Fun, split-screen composition. Top half: A wilted bouquet of red roses. Bottom half: A sparkling JOY COLORi diamond necklace box being opened, capturing a bright gleam. Text overlay in the middle: 'Flowers vs. Forever'. Bright, high-contrast colors. Pop art influence. 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, dark&quot;, &quot;consistency_seed&quot;: 101}">
+                            <span
+                                style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; backdrop-filter: blur(4px);">View
+                                Prompt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Variation 3: Sustainable -->
+                <div id="copy3" class="tab-content copy-block" style="display: none;">
+                    <div class="copy-label">Variation C: Values & Sustainability</div>
+                    <div class="post-content">
+                        愛妳，也愛這片土地。🌍❤️
+
+                        今年的情人節禮物，我們選擇更有意義得方式。
+                        JOY COLORi 實驗室培育鑽石，
+                        零開採、零碳排放，卻擁有 100% 的美麗。
+
+                        這份閃耀，代表的不只是浪漫，
+                        更是我們對未來的共同嚮往。
+
+                        ✨ 讓愛與地球一起永續。
+
+                        👇 妳也支持綠色時尚嗎？+1 讓我知道！
+
+                        .
+                        .
+                        #JOYCOLORi #永續時尚 #綠色情人節 #EcoFriendly #SustainableLuxury #未來鑽石 #有意義的禮物
+                    </div>
+                    <div class="cover-design-section"
+                        style="margin-top: 24px; border-top: 1px solid var(--md-sys-color-outline-variant); padding-top: 16px;">
+                        <h4 style="color: var(--md-sys-color-secondary); margin: 0 0 12px 0; font-size: 0.9rem;">Cover
+                            Design Concept & Prompt 🎨</h4>
+                        <div class="storyboard-thumb"
+                            style="width: 100%; max-width: 375px; aspect-ratio: 4/5; height: auto; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); background-image: url('images/joycolori_cover_v3_eco.png'); background-size: cover; background-position: center;"
+                            onclick="showPromptModal(this)"
+                            data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;studio-product&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Conceptual art photography. A beautiful diamond necklace hanging from a natural branch or nestled in fresh green moss and wildflowers. Soft, ethereal morning light filtering through leaves (dappled light). The juxtaposition of luxury jewelry and raw nature. Clean, organic, peaceful aesthetic. 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, industrial, messy&quot;, &quot;consistency_seed&quot;: 101}">
+                            <span
+                                style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; backdrop-filter: blur(4px);">View
+                                Prompt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Audio Atmosphere -->
+            <div class="card">
+                <h2>音樂與音效設定 (Audio Atmosphere)</h2>
+                <div class="section-content">
+                    <p><strong>核心情緒：</strong> 甜蜜、輕快、浪漫、質感。</p>
+
+                    <div class="audio-tab-container">
+                        <button class="audio-tab-btn active" onclick="openAudioTab(event, 'bgm1')">V1: 浪漫純愛</button>
+                        <button class="audio-tab-btn" onclick="openAudioTab(event, 'bgm2')">V2: 輕快約會</button>
+                        <button class="audio-tab-btn" onclick="openAudioTab(event, 'bgm3')">V3: 質感鋼琴</button>
+                    </div>
+
+                    <!-- BGM Variation 1 -->
+                    <div id="bgm1" class="audio-tab-content copy-block" style="display: block;">
+                        <div class="copy-label">Variation 1: Romantic Acoustic Ballad</div>
+                        <div
+                            style="background: var(--md-sys-color-surface-container-high); padding: 20px; border-radius: 12px; margin-top: 16px; border: 1px solid var(--md-sys-color-outline-variant);">
+                            <h4 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                                <span class="material-symbols-outlined" style="font-size: 20px;">library_music</span>
+                                Suno AI Prompt
+                            </h4>
+                            <pre
+                                style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: 'Roboto Mono', monospace; white-space: pre-wrap; color: #a6e22e; margin-bottom: 12px;">Romantic acoustic pop, warm acoustic guitar picking, soft male vocals (or humming), strings enter at chorus, sweet and sentimental mood, 80 bpm, major key, love song style, perfect for valentine's day, emotional but happy.</pre>
+
+                            <button class="copy-btn"
+                                onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent); alert('Copied Music Prompt V1!')"
+                                style="width: 100%; justify-content: center;">
+                                <span class="material-symbols-outlined">content_copy</span> Copy Prompt
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- BGM Variation 2 -->
+                    <div id="bgm2" class="audio-tab-content copy-block" style="display: none;">
+                        <div class="copy-label">Variation 2: Upbeat & Playful</div>
+                        <div
+                            style="background: var(--md-sys-color-surface-container-high); padding: 20px; border-radius: 12px; margin-top: 16px; border: 1px solid var(--md-sys-color-outline-variant);">
+                            <h4 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                                <span class="material-symbols-outlined" style="font-size: 20px;">library_music</span>
+                                Suno AI Prompt
+                            </h4>
+                            <pre
+                                style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: 'Roboto Mono', monospace; white-space: pre-wrap; color: #a6e22e; margin-bottom: 12px;">Upbeat indie pop, cheerful whistling or glockenspiel intro, light drums, energetic bassline, sunny day vibe, carefree, happy couple montage music, 110 bpm, catchy melody, youthful.</pre>
+
+                            <button class="copy-btn"
+                                onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent); alert('Copied Music Prompt V2!')"
+                                style="width: 100%; justify-content: center;">
+                                <span class="material-symbols-outlined">content_copy</span> Copy Prompt
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- BGM Variation 3 -->
+                    <div id="bgm3" class="audio-tab-content copy-block" style="display: none;">
+                        <div class="copy-label">Variation 3: Elegant Piano</div>
+                        <div
+                            style="background: var(--md-sys-color-surface-container-high); padding: 20px; border-radius: 12px; margin-top: 16px; border: 1px solid var(--md-sys-color-outline-variant);">
+                            <h4 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                                <span class="material-symbols-outlined" style="font-size: 20px;">library_music</span>
+                                Suno AI Prompt
+                            </h4>
+                            <pre
+                                style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: 'Roboto Mono', monospace; white-space: pre-wrap; color: #a6e22e; margin-bottom: 12px;">Elegant modern classical piano, minimal ambience, sophisticated, luxury commercial vibe, clear piano notes, slow build up, cinematic emotion, touching high notes, 70 bpm, pure and clean sound.</pre>
+
+                            <button class="copy-btn"
+                                onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent); alert('Copied Music Prompt V3!')"
+                                style="width: 100%; justify-content: center;">
+                                <span class="material-symbols-outlined">content_copy</span> Copy Prompt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Created by <a href="https://tenten.co" target="_blank"
+                    style="color: inherit; text-decoration: none; border-bottom: 1px solid currentColor;">Tenten AI</a>
+                -
+                For more AI insight <a href="https://instagram.com/tenten.co" target="_blank"
+                    style="color: inherit; text-decoration: none; border-bottom: 1px solid currentColor;">follow us</a>
+            </p>
+        </footer>
+
+        <!-- Prompt Modal -->
+        <div id="promptModal" class="modal-overlay" onclick="closeModal(event)">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Nano Banana JSON Meta Prompt</h3>
+                    <button class="close-btn" onclick="document.getElementById('promptModal').style.display='none'">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <pre id="jsonDisplay" class="json-code"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="copy-btn" onclick="copyPrompt()">
+                        <span class="material-symbols-outlined" style="font-size:16px">content_copy</span> Copy JSON
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Modal Functions
+            function showPromptModal(element) {
+                const jsonString = element.getAttribute('data-json');
+                if (!jsonString) return;
+                try {
+                    const jsonObj = JSON.parse(jsonString);
+                    const prettyJson = JSON.stringify(jsonObj, null, 2);
+                    document.getElementById('jsonDisplay').textContent = prettyJson;
+                    document.getElementById('promptModal').style.display = 'flex';
+                } catch (e) {
+                    console.error("Invalid JSON data", e);
+                }
+            }
+
+            function closeModal(event) {
+                if (event.target.id === 'promptModal') {
+                    document.getElementById('promptModal').style.display = 'none';
+                }
+            }
+
+            function copyPrompt() {
+                const text = document.getElementById('jsonDisplay').textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    const btn = document.querySelector('.modal-footer .copy-btn');
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:16px">check</span> Copied!';
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                    }, 2000);
+                });
+            }
+
+            // Tab Logic
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tab-btn");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            function openAudioTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("audio-tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("audio-tab-btn");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+</body>
+
+</html>

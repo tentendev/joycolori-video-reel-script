@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOY COLORi 婚戒系列 Reels 創意提案</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- M3 Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <style>
+        :root {
+            /* Bridal Theme: Elegant Gold, Sage, and Crisp White */
+            --md-sys-color-primary: #8F784B;
+            /* Muted Gold */
+            --md-sys-color-on-primary: #FFFFFF;
+            --md-sys-color-primary-container: #F4EFE5;
+            --md-sys-color-on-primary-container: #2A2110;
+
+            --md-sys-color-secondary: #5F6F65;
+            /* Sage Green for Sustainability */
+            --md-sys-color-secondary-container: #E2E8E4;
+
+            --md-sys-color-surface: #FCFCFC;
+            --md-sys-color-surface-container: #FFFFFF;
+            --md-sys-color-on-surface: #1A1C19;
+            --md-sys-color-on-surface-variant: #434844;
+
+            --md-sys-color-outline: #757775;
+            --md-sys-color-outline-variant: #C4C7C5;
+
+            --border-radius-xl: 28px;
+            --border-radius-lg: 16px;
+            --border-radius-md: 12px;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background-color: var(--md-sys-color-surface);
+            padding: 80px 20px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brand-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            /* Elegant Serif for Bridal */
+            font-weight: 600;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: -0.01em;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #1A1C19 0%, #434844 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-top: 16px;
+            max-width: 600px;
+            font-weight: 400;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+            display: grid;
+            gap: 24px;
+        }
+
+        .card {
+            background-color: var(--md-sys-color-surface-container);
+            border-radius: var(--border-radius-xl);
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        h2 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 24px;
+            color: var(--md-sys-color-on-surface);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background-color: var(--md-sys-color-primary);
+            border-radius: 4px;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .info-cell {
+            padding: 20px;
+            background-color: var(--md-sys-color-surface);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--md-sys-color-on-surface-variant);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .value {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .script-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
+        }
+
+        .script-table th {
+            text-align: left;
+            padding: 16px;
+            font-size: 0.85rem;
+            color: var(--md-sys-color-on-surface-variant);
+            border-bottom: 1px solid var(--md-sys-color-outline-variant);
+            font-weight: 600;
+        }
+
+        .script-table td {
+            padding: 20px 16px;
+            border-bottom: 1px solid #F0F0F0;
+            vertical-align: middle;
+            font-size: 0.95rem;
+        }
+
+        .script-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .time-badge {
+            display: inline-block;
+            background-color: var(--md-sys-color-on-surface);
+            color: var(--md-sys-color-surface);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-family: 'Inter', monospace;
+        }
+
+        .storyboard-thumb {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background-color: #eee;
+        }
+
+        .storyboard-thumb:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .copy-block {
+            background-color: #202124;
+            color: #E8EAED;
+            padding: 24px;
+            border-radius: var(--border-radius-lg);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 0.95rem;
+            white-space: pre-wrap;
+            position: relative;
+        }
+
+        .copy-label {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 0.7rem;
+            color: #9AA0A6;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .visual-block {
+            background: transparent;
+            padding: 0;
+        }
+
+        /* Tab Styles */
+        .tab-container,
+        .audio-tab-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline-variant);
+        }
+
+        .audio-tab-container {
+            margin-top: 20px;
+        }
+
+        .tab-btn,
+        .audio-tab-btn {
+            background: transparent;
+            border: none;
+            padding: 10px 16px;
+            font-size: 0.9rem;
+            color: var(--md-sys-color-on-surface-variant);
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tab-btn:hover,
+        .audio-tab-btn:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            color: var(--md-sys-color-primary);
+        }
+
+        .tab-btn.active,
+        .audio-tab-btn.active {
+            background-color: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-surface);
+            font-weight: 600;
+        }
+
+        .tab-content,
+        .audio-tab-content {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: #1E1E1E;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            max-height: 85vh;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 0;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .json-code {
+            padding: 24px;
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
+            color: #A6E22E;
+            white-space: pre-wrap;
+            background: #151515;
+        }
+
+        .modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .copy-btn {
+            background-color: var(--md-sys-color-primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .card {
+                padding: 24px;
+                border-radius: 20px;
+            }
+
+            .script-table th {
+                display: none;
+            }
+
+            .script-table td {
+                display: block;
+                padding: 8px 0;
+                border: none;
+            }
+
+            .script-table tr {
+                display: block;
+                margin-bottom: 24px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid var(--md-sys-color-outline-variant);
+            }
+
+            .storyboard-thumb {
+                width: 100%;
+                max-width: 180px;
+                height: 320px;
+                margin-top: 10px;
+            }
+        }
+
+        /* Navigation Tabs */
+        .proposal-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+            background: rgba(0, 0, 0, 0.04);
+            padding: 6px;
+            border-radius: 16px;
+            width: fit-content;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .nav-link.active {
+            background-color: var(--md-sys-color-surface-container);
+            color: var(--md-sys-color-on-surface);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="proposal-nav">
+            <a href="joycolori_reel_proposal.html" class="nav-link">Brand Campaign</a>
+            <a href="joycolori_reel_valentines_proposal.html" class="nav-link">Valentine's Day</a>
+            <a href="joycolori_reel_bridal_proposal.html" class="nav-link active">Bridal Collection</a>
+        </nav>
+        <div class="brand-chip">
+            <span class="material-symbols-outlined" style="font-size: 16px;">diamond</span>
+            JOY COLORi 婚戒系列
+        </div>
+        <h1>許諾未來・純淨的愛</h1>
+        <p>為準新人打造的「未來鑽石」婚戒 Reels 內容策略。</p>
+    </header>
+
+    <div class="main-content">
+
+        <!-- 1. Strategy Overview -->
+        <div class="card">
+            <h2>策略總覽 (Strategy Overview)</h2>
+            <div class="strategy-grid">
+                <div class="info-cell">
+                    <span class="label">專案名稱</span>
+                    <div class="value">婚戒系列：未來的誓言 (Future Vows)</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">主打產品</span>
+                    <div class="value">訂婚鑽戒 (Engagement Ring)</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">目標受眾</span>
+                    <div class="value">28-35歲 備婚情侶 / 環保意識世代</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">核心情緒</span>
+                    <div class="value">神聖、永恆、純淨、責任</div>
+                </div>
+                <div class="info-cell">
+                    <span class="label">主要行動 (CTA)</span>
+                    <div class="value">預約試戴 & 領取結婚護照</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Campaign Poster / Key Visual -->
+        <div class="card">
+            <h2>視覺形象海報 (Campaign Poster)</h2>
+            <div class="visual-block" style="text-align: center; background: transparent; padding: 0;">
+
+                <!-- Movie Poster Container -->
+                <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                    data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-reality&quot;, &quot;aspect_ratio&quot;: &quot;2:3&quot;, &quot;prompt&quot;: &quot;Cinematic movie poster for a romantic bridal film titled 'Future Vows'. Wide shot of a couple standing on a cliff edge or in a vast meadow at sunrise, holding hands, facing a bright horizon. The woman is wearing a modern, minimalist white wedding dress. The focus is on the atmosphere of hope and eternity. Elegant serif typography title. Clean, airy, sustainable luxury aesthetic. 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, dark, gloomy&quot;, &quot;consistency_seed&quot;: 202}"
+                    style="position: relative; width: 100%; max-width: 400px; aspect-ratio: 2/3; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); display: block; height: auto; cursor: pointer; background-color: #E2E8E4;">
+
+                    <!-- Background Placeholder (Gradient for now) -->
+                    <!-- Background Placeholder (Gradient for now) -->
+                    <div
+                        style="position: absolute; inset: 0; background-image: url('images/joycolori_cover_v4_minimalist.png'); background-size: cover; background-position: center;">
+                    </div>
+
+                    <!-- Gradient Overlay -->
+                    <div
+                        style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(95, 111, 101, 0.8) 80%, rgba(42, 33, 16, 0.95) 100%); pointer-events: none;">
+                    </div>
+
+                    <!-- Poster Text Content -->
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; color: white; padding: 40px 20px 30px; box-sizing: border-box; pointer-events: none;">
+                        <div
+                            style="font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 12px; font-weight: 300; opacity: 0.9;">
+                            Coming This Season</div>
+
+                        <h3
+                            style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 0; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+                            Future Vows</h3>
+
+                        <div
+                            style="font-size: 1.1rem; margin-top: 8px; font-weight: 300; letter-spacing: 0.1em; font-family: 'Noto Sans TC', serif;">
+                            未來的誓言</div>
+
+                        <!-- Credits Block -->
+                        <div
+                            style="font-size: 0.45rem; margin-top: 24px; color: rgba(255,255,255,0.7); letter-spacing: 0.15em; line-height: 1.6; text-transform: uppercase;">
+                            JOY COLORi presents a film by TENTEN AI <br>
+                            Starring "The Engagement Ring" & "Eternal Promise" <br>
+                            100% Climate Neutral • Lab-Grown • Conflict-Free
+                        </div>
+                    </div>
+
+                    <!-- View Prompt Badge -->
+                    <span
+                        style="position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 12px; font-size: 0.75rem; border-radius: 20px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); font-weight: 500;">View
+                        Prompt</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Cover & Aesthetic Strategy -->
+        <div class="card">
+            <h2>封面與美學策略 (Cover Strategy)</h2>
+            <p style="color: var(--md-sys-color-on-surface-variant); margin-bottom: 24px;">
+                針對婚嫁市場，採用「神聖感」與「細節質感」並重的視覺策略。
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                <!-- Concept 1 -->
+                <div class="visual-block" style="background: transparent; padding: 0;">
+                    <div class="storyboard-thumb"
+                        style="width: 100%; aspect-ratio: 4/5; height: auto; border-radius: 12px; background-image: url('images/joycolori_cover_v1_emotional.png'); background-size: cover; background-position: center;"
+                        onclick="showPromptModal(this)"
+                        data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-moody&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Macro shot of a solitaire diamond engagement ring on a finger, intertwined with another hand. Soft focus. The diamond reflects a prismatic rainbow of light. Pure, clean, white and gold aesthetic. 8k resolution.&quot;}">
+                    </div>
+                    <div class="caption" style="text-align: center; margin-top: 8px;"><strong>A.
+                            神聖承諾</strong><br>聚焦於戒指與牽手的細節</div>
+                </div>
+                <!-- Concept 2 -->
+                <div class="visual-block" style="background: transparent; padding: 0;">
+                    <div class="storyboard-thumb"
+                        style="width: 100%; aspect-ratio: 4/5; height: auto; border-radius: 12px; background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center;"
+                        onclick="showPromptModal(this)"
+                        data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;lifestyle-vlog&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Candid shot of a bride laughing with her bridesmaids, holding a glass of champagne, showing off her ring. Natural light, joyful, unposed. High key lighting. 8k resolution.&quot;}">
+                    </div>
+                    <div class="caption" style="text-align: center; margin-top: 8px;"><strong>B.
+                            幸福瞬間</strong><br>展現備婚過程的喜悅</div>
+                </div>
+                <!-- Concept 3 -->
+                <div class="visual-block" style="background: transparent; padding: 0;">
+                    <div class="storyboard-thumb"
+                        style="width: 100%; aspect-ratio: 4/5; height: auto; border-radius: 12px; background-image: url('images/joycolori_cover_v3_eco.png'); background-size: cover; background-position: center;"
+                        onclick="showPromptModal(this)"
+                        data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;studio-product&quot;, &quot;aspect_ratio&quot;: &quot;4:5&quot;, &quot;prompt&quot;: &quot;Artistic product shot. The ring is placed on a piece of raw, rough sustainable material like recycled concrete or driftwood, contrasting with the perfection of the diamond. Dramatic lighting from the side. Conceptual sustainability. 8k resolution.&quot;}">
+                    </div>
+                    <div class="caption" style="text-align: center; margin-top: 8px;"><strong>C.
+                            永續工藝</strong><br>強調實驗室培育的純淨</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Script with Visuals -->
+        <div class="card">
+            <h2>逐秒分鏡腳本</h2>
+            <table class="script-table">
+                <thead>
+                    <tr>
+                        <th width="8%">時間</th>
+                        <th width="30%">畫面視覺</th>
+                        <th width="12%">聲音音效</th>
+                        <th width="30%">文案 / 旁白</th>
+                        <th width="20%">分鏡示意 (Click to View Prompt)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="time-badge">0:00</span></td>
+                        <td><strong>[Hook]</strong> 快速剪輯：從黑白的老電影接吻鏡頭，過渡到現代、色彩鮮豔的情侶大笑奔跑。字幕：「愛的方式在變，但愛的本質不變。」</td>
+                        <td>🎞 放映機聲<br>➡️ 現代重低音轉場</td>
+                        <td><strong>(VO) 以前，我們用開採來證明愛。<br>現在，我們選擇......</strong></td>
+                        <td>
+                            <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-retro&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Split screen or montage. Left: Vintage black and white footage of a classic 1950s wedding kiss. Right: Vibrant, high-quality color footage of a modern Gen-Z couple running through a field or city street, holding hands and laughing. Visual contrast between 'Then' and 'Now'. 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, blur, low quality&quot;, &quot;consistency_seed&quot;: 202}"
+                                style="background-image: url('images/joycolori_cover_v6_career.png'); background-size: cover; background-position: center;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="time-badge">0:04</span></td>
+                        <td><strong>[Reveal]</strong> 鑽石生長的縮時攝影特效（科技感），轉化為一顆完美的 JOY COLORi 裸鑽，最後鑲嵌在戒指上。</td>
+                        <td>✨ 科技感音效<br>💎 晶瑩剔透音</td>
+                        <td><strong>(VO) 更純淨的未來。<br>JOY COLORi 實驗室培育鑽石。</strong></td>
+                        <td>
+                            <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;3d-model&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Abstract, futuristic visualization of a diamond forming crystal by crystal in a clean, high-tech lab environment. Blue and white glowing hues. It smoothly transitions into a macro shot of a real, polished engagement ring rotating slowly. Sparkles and light refractions. High-end commercial cgi style. 8k resolution.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, dark, gloomy&quot;, &quot;consistency_seed&quot;: 202}"
+                                style="background-image: url('images/joycolori_cover_v3_eco.png'); background-size: cover; background-position: center;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="time-badge">0:08</span></td>
+                        <td><strong>[Commitment]</strong> 男生單膝下跪的背影（或側面剪影），背景是壯闊的自然景觀（山頂或海邊）。女生伸出手的特寫，戒指滑入指間。</td>
+                        <td>🌊 海浪/風聲<br>❤️ 溫暖鋼琴入</td>
+                        <td><strong>我們的愛，值得對地球更溫柔。<br>這是一份，不留傷痕的承諾。</strong></td>
+                        <td>
+                            <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;cinematic-reality&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Epic wide shot turned into close-up. Silhouette of a man on one knee against a breathtaking sunset over the ocean. Cut to: Extreme close-up of a diverse woman's hand as the engagement ring is slid onto her finger. The sun flares behind the ring. Emotional, tear-jerking beauty. 8k, romantic atmosphere.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, stiff, posed, fake emotions&quot;, &quot;consistency_seed&quot;: 202}"
+                                style="background-image: url('images/joycolori_val_surprise.png'); background-size: cover; background-position: center;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="time-badge">0:12</span></td>
+                        <td><strong>[Ending]</strong> 兩人深情對視，額頭相抵。畫面淡出，出現 Logo 與 Slogan「Future Diamond, Future Love」。
+                        </td>
+                        <td>🎵 弦樂高潮<br>🔔 婚禮鐘聲（微弱）</td>
+                        <td><strong>JOY COLORi 婚戒系列<br>預約試戴，領取妳的幸福證書。</strong></td>
+                        <td>
+                            <div class="storyboard-thumb" onclick="showPromptModal(this)"
+                                data-json="{&quot;model&quot;: &quot;nanobananapro&quot;, &quot;style_preset&quot;: &quot;lifestyle-vlog&quot;, &quot;aspect_ratio&quot;: &quot;9:16&quot;, &quot;prompt&quot;: &quot;Intimate portrait of the couple, foreheads touching, eyes closed, smiling peacefully. The ring is visible on her hand resting on his chest. Soft focus background. Text overlay reveals the JOY COLORi logo and 'Future Diamond'. Clean, high-key lighting. 8k, wedding photography style.&quot;, &quot;negative_prompt&quot;: &quot;cartoon, illustration, 3d render, sad, serious&quot;, &quot;consistency_seed&quot;: 202}"
+                                style="background-image: url('images/joycolori_cover_v1_emotional.png'); background-size: cover; background-position: center;">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 5. Social Copy with Tabs -->
+        <div class="card">
+            <h2>社群貼文文案 (Social Variations)</h2>
+
+            <!-- Tab Navigation -->
+            <div class="tab-container">
+                <button class="tab-btn active" onclick="openTab(event, 'copy1')">方案 A：感性誓言</button>
+                <button class="tab-btn" onclick="openTab(event, 'copy2')">方案 B：理性永續</button>
+                <button class="tab-btn" onclick="openTab(event, 'copy3')">方案 C：備婚乾貨</button>
+            </div>
+
+            <!-- Variation 1: Emotional Vows -->
+            <div id="copy1" class="tab-content copy-block" style="display: block;">
+                <div class="copy-label">Variation A: Emotional Vows</div>
+                <div class="post-content">
+                    Yes, I Do. 💍
+
+                    在說出這句話之前，我們走過了多少路？
+                    這枚戒指，不只是裝飾，
+                    它代表著我想和妳一起度過的每一個明天。
+
+                    選擇 JOY COLORi 未來鑽石，
+                    因為我希望我們的愛，像這顆鑽石一樣，
+                    純淨、無瑕，並且對這個世界溫柔以待。🌍
+
+                    致 未來的我們。
+
+                    👇 Tag 妳想共度餘生的那個人。
+
+                    .
+                    .
+                    #JOYCOLORi #未來鑽石 #求婚 #婚戒 #EngagementRing #MarryMe #永續愛情 #LabGrownDiamonds #WeddingInspo
+                </div>
+            </div>
+
+            <!-- Variation 2: Rational / Eco -->
+            <div id="copy2" class="tab-content copy-block" style="display: none;">
+                <div class="copy-label">Variation B: Eco-Conscious</div>
+                <div class="post-content">
+                    為什麼越來越多新世代夫妻選擇「實驗室培育鑽石」？🤔
+
+                    ❌ 拒絕開採破壞
+                    ❌ 拒絕人道爭議
+                    ✅ 100% 物理化學性質相同
+                    ✅ 100% 碳中和與永續
+
+                    婚戒，是兩人共同價值觀的體現。
+                    選擇 JOY COLORi，不只選擇了頂級車工的閃耀，
+                    更選擇了對地球的一份責任。🌱
+
+                    把預算花在更有意義的地方（比如蜜月！✈️），
+                    同時擁有最頂級的光芒。
+
+                    👇 點擊主頁連結，預約門市鑑賞。
+
+                    .
+                    .
+                    #JOYCOLORi #綠色婚禮 #環保婚戒 #永續時尚 #CP值 #備婚日記 #精明新娘
+                </div>
+            </div>
+
+            <!-- Variation 3: Educational / Utility -->
+            <div id="copy3" class="tab-content copy-block" style="display: none;">
+                <div class="copy-label">Variation C: Tips & Guide</div>
+                <div class="post-content">
+                    挑選婚戒的 3 個隱藏版地雷！💣 (準新人必看)
+
+                    1. 只看克拉數，忽略了車工 (Cut) —— 車工才是閃耀的關鍵！
+                    2. 沒考慮日常配戴舒適度 —— 會勾頭髮的款式要三思。
+                    3. 認為「天然」一定比較好 —— 其實實驗室培育鑽石更純淨、無雜質。
+
+                    還在猶豫嗎？
+                    來 JOY COLORi，我們的鑽石顧問會為您一一解惑，
+                    找到那顆寫著妳名字的命定鑽戒。💎
+
+                    👇 留言「預約」，領取專屬婚戒諮詢服務。
+
+                    .
+                    .
+                    #JOYCOLORi #婚戒挑選 #備婚攻略 #鑽石知識 #結婚對戒 #求婚戒指 #BrideToBe
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Audio Atmosphere -->
+        <div class="card">
+            <h2>音樂與音效設定 (Audio Atmosphere)</h2>
+            <div class="section-content">
+                <p><strong>核心情緒：</strong> 史詩、神聖、溫暖、充滿希望。</p>
+
+                <div class="audio-tab-container">
+                    <button class="audio-tab-btn active" onclick="openAudioTab(event, 'bgm1')">V1: 現代婚禮弦樂</button>
+                    <button class="audio-tab-btn" onclick="openAudioTab(event, 'bgm2')">V2: 電影感史詩</button>
+                    <button class="audio-tab-btn" onclick="openAudioTab(event, 'bgm3')">V3: 溫暖原生木吉他</button>
+                </div>
+
+                <!-- BGM Variation 1 -->
+                <div id="bgm1" class="audio-tab-content copy-block" style="display: block;">
+                    <div class="copy-label">Variation 1: Modern Wedding Strings</div>
+                    <div
+                        style="background: var(--md-sys-color-surface-container-high); padding: 20px; border-radius: 12px; margin-top: 16px; border: 1px solid var(--md-sys-color-outline-variant);">
+                        <h4 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">library_music</span>
+                            Suno AI Prompt
+                        </h4>
+                        <pre
+                            style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: 'Roboto Mono', monospace; white-space: pre-wrap; color: #a6e22e; margin-bottom: 12px;">Modern cinematic strings, swelling cello, emotional violin solo, soft piano accompaniment, building to a joyful climax, wedding march vibes but contemporary, hopeful, pure love, 65 bpm, major key.</pre>
+
+                        <button class="copy-btn"
+                            onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent); alert('Copied Music Prompt V1!')"
+                            style="width: 100%; justify-content: center;">
+                            <span class="material-symbols-outlined">content_copy</span> Copy Prompt
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BGM Variation 2 -->
+                <div id="bgm2" class="audio-tab-content copy-block" style="display: none;">
+                    <div class="copy-label">Variation 2: Cinematic Epic</div>
+                    <div
+                        style="background: var(--md-sys-color-surface-container-high); padding: 20px; border-radius: 12px; margin-top: 16px; border: 1px solid var(--md-sys-color-outline-variant);">
+                        <h4 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">library_music</span>
+                            Suno AI Prompt
+                        </h4>
+                        <pre
+                            style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: 'Roboto Mono', monospace; white-space: pre-wrap; color: #a6e22e; margin-bottom: 12px;">Ambient cinematic build-up, ethereal synth pads, deep emotional piano chords, orchestral drums entering slowly, sense of grandeur and vastness, "Interstellar" vibes but romantic, awe-inspiring, 60 bpm.</pre>
+
+                        <button class="copy-btn"
+                            onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent); alert('Copied Music Prompt V2!')"
+                            style="width: 100%; justify-content: center;">
+                            <span class="material-symbols-outlined">content_copy</span> Copy Prompt
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BGM Variation 3 -->
+                <div id="bgm3" class="audio-tab-content copy-block" style="display: none;">
+                    <div class="copy-label">Variation 3: Warm Acoustic</div>
+                    <div
+                        style="background: var(--md-sys-color-surface-container-high); padding: 20px; border-radius: 12px; margin-top: 16px; border: 1px solid var(--md-sys-color-outline-variant);">
+                        <h4 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">library_music</span>
+                            Suno AI Prompt
+                        </h4>
+                        <pre
+                            style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: 'Roboto Mono', monospace; white-space: pre-wrap; color: #a6e22e; margin-bottom: 12px;">Intimate acoustic guitar fingerstyle, soft folk-pop vocals (humming), warm and cozy atmosphere, sunlight, love song, raw and authentic, "Ed Sheeran" wedding style, 80 bpm.</pre>
+
+                        <button class="copy-btn"
+                            onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent); alert('Copied Music Prompt V3!')"
+                            style="width: 100%; justify-content: center;">
+                            <span class="material-symbols-outlined">content_copy</span> Copy Prompt
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created by <a href="https://tenten.co" target="_blank"
+                style="color: inherit; text-decoration: none; border-bottom: 1px solid currentColor;">Tenten AI</a> -
+            For more AI insight <a href="https://instagram.com/tenten.co" target="_blank"
+                style="color: inherit; text-decoration: none; border-bottom: 1px solid currentColor;">follow us</a></p>
+    </footer>
+
+    <!-- Prompt Modal -->
+    <div id="promptModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Nano Banana JSON Meta Prompt</h3>
+                <button class="close-btn" onclick="document.getElementById('promptModal').style.display='none'">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <pre id="jsonDisplay" class="json-code"></pre>
+            </div>
+            <div class="modal-footer">
+                <button class="copy-btn" onclick="copyPrompt()">
+                    <span class="material-symbols-outlined" style="font-size:16px">content_copy</span> Copy JSON
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal Functions
+        function showPromptModal(element) {
+            const jsonString = element.getAttribute('data-json');
+            if (!jsonString) return;
+            try {
+                const jsonObj = JSON.parse(jsonString);
+                const prettyJson = JSON.stringify(jsonObj, null, 2);
+                document.getElementById('jsonDisplay').textContent = prettyJson;
+                document.getElementById('promptModal').style.display = 'flex';
+            } catch (e) {
+                console.error("Invalid JSON data", e);
+            }
+        }
+
+        function closeModal(event) {
+            if (event.target.id === 'promptModal') {
+                document.getElementById('promptModal').style.display = 'none';
+            }
+        }
+
+        function copyPrompt() {
+            const text = document.getElementById('jsonDisplay').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = document.querySelector('.modal-footer .copy-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:16px">check</span> Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+
+        // Tab Logic
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openAudioTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("audio-tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("audio-tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
