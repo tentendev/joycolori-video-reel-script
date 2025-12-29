@@ -4,44 +4,37 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a creative content project for JOY COLORi (lab-grown diamond jewelry brand) containing:
-- AI system prompts for video proposal generation
-- Static HTML video proposal presentations
-- Image assets for storyboards and covers
+Creative content project for JOY COLORi (lab-grown diamond jewelry brand) containing AI system prompts for video proposal generation and static HTML presentation decks.
 
-## Repository Structure
+## Key Files
 
-- `system_prompt_video_proposal_generator.md` - Master system prompt defining the AI Video Creative Director workflow for generating interactive HTML video proposals
-- `joycolori_reel_proposal.html` - Main brand campaign proposal ("給 22 歲的妳")
-- `joycolori_reel_valentines_proposal.html` - Valentine's Day campaign variant
+- `system_prompt_video_proposal_generator.md` - Master AI Video Creative Director prompt for generating interactive HTML proposals
+- `joycolori_reel_proposal.html` - Main brand campaign ("給 22 歲的妳")
+- `joycolori_reel_valentines_proposal.html` - Valentine's Day variant
 - `joycolori_reel_bridal_proposal.html` - Bridal collection variant
-- `images/` - Generated storyboard frames, cover options, and campaign posters
+- `index.html` - Redirect to main proposal (for Vercel deployment)
 
 ## HTML Proposal Architecture
 
-Each proposal HTML file follows Material Design 3 styling with:
-- Tabbed interfaces for social copy variations (6 versions) and BGM options (3 versions)
-- Interactive modals for viewing/copying Nano Banana JSON prompts
-- Sprite-based storyboard thumbnails with `background-position` for grid navigation
-- Navigation bar linking between campaign variants
+Single-file static HTML using Material Design 3 with:
+- Tabbed interfaces for 6 social copy variations and 3 BGM options
+- Modals for viewing/copying Nano Banana JSON prompts (`data-json` attributes)
+- Sprite-based storyboard grids using `background-position` navigation
+- Inter + Noto Sans TC fonts via Google Fonts CDN
 
-### Key JavaScript Functions
-- `openTab(evt, tabName)` - Switch social copy variations
-- `openAudioTab(evt, tabName)` - Switch BGM options
-- `showPromptModal(element)` - Display JSON prompts from `data-json` attributes
-- `copyPrompt()` - Copy modal content to clipboard
+### JavaScript Functions
+- `openTab(evt, tabName)` / `openAudioTab(evt, tabName)` - Tab switching
+- `showPromptModal(element)` - Display JSON from `data-json`
+- `copyPrompt()` - Clipboard copy
 
-## System Prompt Workflow Phases
+## Image Assets
 
-1. **Strategic Core & Concept** - Brief analysis, hook definition, persona targeting
-2. **Visual & Directorial Style** - Aesthetics, camera specs, Nano Banana prompt format
-3. **Storyboard** - Scene-by-scene with time, visual, audio, copy, and image prompts
-4. **Social Media Power Pack** - Caption variations with matched cover art concepts
-5. **Audio Atmosphere** - Suno AI prompt variations for BGM
+`images/` contains timestamp-suffixed grid sprites and individual cover variants:
+- `*_grid_*.png` - Composite sprite sheets for storyboards/hooks
+- `*_cover_v[1-6]_*.png` - Individual cover options per social copy variant
 
-## Nano Banana JSON Format
+## Nano Banana Prompt Format
 
-All image generation prompts use this structure:
 ```json
 {
   "model": "nanobananapro",
@@ -53,6 +46,6 @@ All image generation prompts use this structure:
 }
 ```
 
-## Local Development
+## Development
 
-Open HTML files directly in browser - no build step required. Files are self-contained with inline CSS/JS and CDN-loaded fonts (Google Fonts, Material Symbols).
+No build step - open HTML files directly in browser. Deployed on Vercel with `cleanUrls: true`.
