@@ -313,6 +313,7 @@
         html, body {
             overflow-x: hidden;
             max-width: 100vw;
+            width: 100%;
         }
 
         * {
@@ -321,8 +322,16 @@
 
         /* Responsive - Mobile */
         @media (max-width: 600px) {
+            html, body {
+                width: 100% !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+
             header {
                 padding: 40px 16px 32px;
+                width: 100%;
+                max-width: 100%;
             }
 
             header h1 {
@@ -337,25 +346,40 @@
                 padding: 0 12px 60px;
                 gap: 16px;
                 overflow-x: hidden;
+                width: 100%;
+                max-width: 100%;
             }
 
             .card {
                 padding: 16px;
                 border-radius: 16px;
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
             }
 
             h2 {
                 font-size: 1.2rem;
                 margin-bottom: 16px;
+                word-wrap: break-word;
             }
 
             .strategy-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
+                width: 100%;
+                max-width: 100%;
             }
 
             .info-cell {
                 padding: 14px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .label, .value {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
             }
 
             /* Navigation tabs - mobile scroll */
@@ -377,6 +401,21 @@
                 padding: 8px 12px;
                 font-size: 0.8rem;
                 flex-shrink: 0;
+            }
+
+            /* Script table - prevent overflow */
+            .script-table {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+
+            .script-table tbody,
+            .script-table tr,
+            .script-table td {
+                width: 100%;
+                max-width: 100%;
             }
 
             /* Script table storyboard thumbnails - sprite grids */
